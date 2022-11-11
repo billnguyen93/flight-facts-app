@@ -1,0 +1,81 @@
+{
+    "jordans": [
+      {
+        "id": 1,
+        "name": "Jordan I",
+        "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj1Retro1.jpg",
+        "date": 1984,
+        "designer": "Peter Moore"
+      },
+      {
+        "id": 2,
+        "name": "Jordan II",
+        "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj2Retro2.jpg",
+        "date": 1985,
+        "designer": "Peter Moore"
+      },
+      {
+        "id": 3,
+        "name": "Jordan III",
+        "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj3Retro3.jpg",
+        "date": 1986,
+        "designer": "Tinker Hatfield"
+      },
+      {
+        "id": 4,
+        "name": "Jordan IV",
+        "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj3Retro4.jpg",
+        "date": 1989,
+        "designer": "Tinker Hatfield"
+      },
+      {
+        "id": 5,
+        "name": "Jordan V",
+        "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj4Retro5.jpg",
+        "date": 1990,
+        "designer": "Tinker Hatfield"
+      },
+      {
+        "id": 6,
+        "name": "Jordan VI",
+        "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj4Retro6.jpg",
+        "date": 1991,
+        "designer": "Tinker Hatfield"
+      },
+      {
+        "id": 7,
+        "name": "Jordan VII",
+        "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj4Retro7.jpg",
+        "date": 1992,
+        "designer": "Tinker Hatfield"
+      },
+      {
+        "id": 8,
+        "name": "Jordan VIII",
+        "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj4Retro8.jpg",
+        "date": 1993,
+        "designer": "Tinker Hatfield"
+      },
+      {
+        "id": 9,
+        "name": "Jordan IX",
+        "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj4Retro9.jpg",
+        "date": 1993,
+        "designer": "Tinker Hatfield"
+      },
+      {
+        "id": 10,
+        "name": "Jordan X",
+        "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj10Retro10.jpg",
+        "date": 1994,
+        "designer": "Tinker Hatfield"
+      },
+      {
+        "id": 11,
+        "name": "Jordan XI",
+        "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj4Retro11.jpg",
+        "date": 1995,
+        "designer": "Tinker Hatfield"
+      }
+    ]
+  }
