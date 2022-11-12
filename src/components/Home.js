@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Home() {
+    const [jordans, setJordans] = useState([]);
+
     return (
     <div class="ui inverted segment">
         <h1 class="ui center aligned header">
@@ -8,6 +10,7 @@ function Home() {
         <div class="sub header ui inverted segment">Facts About Your Favorite Jordans</div>
         </h1>
     </div>
+    
     )
 }
 
