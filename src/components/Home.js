@@ -1,17 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import JordanList from "./JordanList"
 
 function Home() {
     const [jordans, setJordans] = useState([]);
 
+    useEffect(() => {
+        fetch("http://localhost:3004/jordans")
+            .then(resp => resp.json())
+            .then((data) => console.log(data))
+    }, [])
+
     return (
-    <div class="ui inverted segment">
-        <h1 class="ui center aligned header">
-            Flight Facts
-        <div class="sub header ui inverted segment">Facts About Your Favorite Jordans</div>
-        </h1>
-    </div>
-    
+        <div>
+            <JordanList jordans={jordans}/>
+        </div>
     )
 }
 
-export default Home
+export default Home;
