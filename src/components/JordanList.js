@@ -1,4 +1,5 @@
 import React from "react";
+import JordanCard from "./JordanCard";
 
 function JordanList({jordans}) {
     const renderJordans = jordans.map((jordan) => (
