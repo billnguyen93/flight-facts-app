@@ -5,6 +5,7 @@ import Header from "./Header"
 
 
 
+
 function App() {
   
   return (
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <Header />
       <Home />
+      
     </div>
   );
 }

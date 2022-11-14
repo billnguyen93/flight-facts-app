@@ -1,6 +1,7 @@
 import React from "react";
 import JordanCard from "./JordanCard";
 
+
 function JordanList({jordans}) {
     const renderJordans = jordans.map((jordan) => (
         <JordanCard 
@@ -12,7 +13,8 @@ function JordanList({jordans}) {
         />
     ))    
     return (
-        <ul className="cards">{renderJordans}</ul>
+        <div class="ui three cards">{renderJordans}</div>
+        
     )
     
 }
