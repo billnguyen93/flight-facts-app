@@ -13,7 +13,7 @@ function JordanList({jordans}) {
         />
     ))    
     return (
-        <div class="ui three cards">{renderJordans}</div>
+        <div className="ui three cards">{renderJordans}</div>
         
     )
     
