@@ -10,9 +10,20 @@ function Home() {
             .then((data) => setJordans(data))
     }, [])
 
+    function updateJordan(updatedJordan) {
+        const newJordans = jordans.map(jordan => {
+            if(updatedJordan.id === jordan.id) {
+                return updatedJordan
+            } else {
+                return jordan
+            }
+        })
+        setJordans(newJordans)
+    }
+
     return (
         <div className="home">
-            <JordanList jordans={jordans}/>
+            <JordanList jordans={jordans} updateJordan={updateJordan}/>
         </div>
     )
 }
