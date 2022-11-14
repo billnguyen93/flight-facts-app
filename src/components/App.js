@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import Header from "./Header"
-import Background from "./Background.jpg"
+
 
 
 
