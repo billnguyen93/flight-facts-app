@@ -35,7 +35,7 @@ function JordanCard({jordan, updateJordan}) {
             <i class="heart icon"></i> Likes: {likes}
          </div>
             <a class="ui basic label">
-                Add to WishList
+                Add to Favorites
             </a>
          </div>
         </div>
