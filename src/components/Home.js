@@ -1,11 +1,14 @@
 import React from "react";
 import JordanCard from "./JordanCard";
 
-function Home({jordans, updateJordan}) {
+function Home({jordans, updateJordan, onFavoriteJordan}) {
     const renderJordans = jordans.map((jordan) => (
-        <JordanCard 
+        <JordanCard
+            key={jordan.id} 
             jordan={jordan} 
-            updateJordan={updateJordan}  
+            updateJordan={updateJordan}
+            onFavoriteJordan={onFavoriteJordan}
+             
         />
     ))    
     return (

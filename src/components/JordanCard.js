@@ -1,10 +1,10 @@
 import React from "react";
 
-function JordanCard({jordan, updateJordan}) {
+function JordanCard({jordan, updateJordan, onFavoriteJordan}) {
 
     const {id, name, image, date, designer, likes} = jordan
 
-    function handleLikeClick(e) {
+    function handleLikeClick() {
         const jordanObj = {
             method: "PATCH",
             headers: {
@@ -18,6 +18,10 @@ function JordanCard({jordan, updateJordan}) {
         
     }
 
+    function handleFavoriteClick() {
+        onFavoriteJordan(jordan)
+    }
+    
     return (
         <div class="ui black card"> 
             <div class="image">
@@ -34,7 +38,7 @@ function JordanCard({jordan, updateJordan}) {
          <div class="ui button" onClick={handleLikeClick}>
             <i class="heart icon"></i> Likes: {likes}
          </div>
-            <a class="ui basic label">
+            <a class="ui basic label" onClick={handleFavoriteClick}>
                 Add to Favorites
             </a>
          </div>

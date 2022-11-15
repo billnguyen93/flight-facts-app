@@ -1,19 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 function NavBar() {
     return (
         <div class="ui inverted segment">
         <div class="ui inverted secondary menu">
-            <a class="active item">
-                Home
-            </a>
+            <Link to="/">
+                <a class="active item">
+                    Home
+                </a>
+            </Link>
             <a class="item">
                 Add New Jordan
             </a>
-            <a class="item">
-                Favorite Jordans
-            </a>
+            <Link to="/favorites">
+                <a class="item">
+                    Favorite Jordans
+                </a>
+            </Link>
             <a class="item">
                 About
             </a>

@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
+import { Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import Header from "./Header";
+import Favorites from "./Favorites";
 
 
 function App() {
     const [jordans, setJordans] = useState([]);
-    // const [favorites, setFavorites] =  useState(false)
+    const [favorites, setFavorites] =  useState([]);
 
     useEffect(() => {
         fetch("http://localhost:3004/jordans")
@@ -24,7 +26,7 @@ function App() {
       })
       setJordans(newJordans)
   }
-  
+
   return (
     <div className="app" style={{
       backgroundImage: `url(https://images.alphacoders.com/683/683741.jpg)`,
@@ -32,8 +34,14 @@ function App() {
   }}>
       <NavBar />
       <Header />
-      <Home jordans={jordans} updateJordan={updateJordan}/>
-      
+      <Switch>
+        <Route path="/favorites">
+          <Favorites favorites={favorites}/>
+        </Route>
+        <Route path="/">
+          <Home jordans={jordans} updateJordan={updateJordan} onFavoriteJordan={setFavorites}/>
+        </Route>
+      </Switch>
     </div>
   );
 }
