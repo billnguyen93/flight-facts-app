@@ -7,7 +7,7 @@ function NavBar() {
         <div class="ui inverted segment">
         <div class="ui inverted secondary menu">
             <Link to="/">
-                <a class="active item">
+                <a class="item">
                     Home
                 </a>
             </Link>
