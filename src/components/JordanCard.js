@@ -20,6 +20,7 @@ function JordanCard({jordan, updateJordan, onFavoriteJordan}) {
 
     function handleFavoriteClick() {
         onFavoriteJordan(jordan)
+        
     }
     
     return (

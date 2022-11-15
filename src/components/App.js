@@ -13,8 +13,10 @@ function App() {
     useEffect(() => {
         fetch("http://localhost:3004/jordans")
             .then(resp => resp.json())
-            .then((data) => setJordans(data))
+            .then((data) => setJordans(data))   
     }, [])
+
+   
 
     function updateJordan(updatedJordan) {
       const newJordans = jordans.map(jordan => {
@@ -26,6 +28,12 @@ function App() {
       })
       setJordans(newJordans)
   }
+
+    const handleFavoriteJordan = (jordan) => {
+      const updatedFavorites = [...favorites, jordan]
+      setFavorites(updatedFavorites)
+    }
+
 
   return (
     <div className="app" style={{
@@ -39,7 +47,7 @@ function App() {
           <Favorites favorites={favorites}/>
         </Route>
         <Route path="/">
-          <Home jordans={jordans} updateJordan={updateJordan} onFavoriteJordan={setFavorites}/>
+          <Home jordans={jordans} updateJordan={updateJordan} onFavoriteJordan={handleFavoriteJordan}/>
         </Route>
       </Switch>
     </div>

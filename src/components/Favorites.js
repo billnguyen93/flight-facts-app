@@ -1,24 +1,22 @@
 import React from "react";
+import FavoriteCard from "./FavoriteCard";
 
 function Favorites ({favorites}) {
 
-    const {name, image, date, designer} = favorites
-
-    console.log(favorites)
+    const renderFavorites = favorites.map((favorite) => (
+        <FavoriteCard 
+        key={favorite.id}
+        favorite={favorite}
+        />
+    ))
 
     return (
-        <div className="ui black card"> 
-            <div className="image">
-                <img class="ui fluid image" src={image} alt={name}/>
-            </div>
-            <div className="content">
-                <h1 class="center aligned header">{name}</h1>
-            </div>
-                <span class="center aligned date">Released in {date}</span>
-            <div className="center aligned description">
-                Designed by: {designer}
-            </div>
-        </div>
+        <div class="ui inverted segment">
+            <h1 class="ui center aligned header">
+                My Favorites
+            </h1>
+            <div className="ui three cards">{renderFavorites}</div>  
+        </div>   
     )
 }
 
