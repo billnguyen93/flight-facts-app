@@ -7,8 +7,7 @@ function Home({jordans, updateJordan, onFavoriteJordan}) {
             key={jordan.id} 
             jordan={jordan} 
             updateJordan={updateJordan}
-            onFavoriteJordan={onFavoriteJordan}
-             
+            onFavoriteJordan={onFavoriteJordan}  
         />
     ))    
     return (
