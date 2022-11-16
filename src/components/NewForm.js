@@ -6,6 +6,7 @@ function NewForm({addNewJordan}) {
     const [image, setImage] = useState("");
     const [date, setDate] = useState("");
     const [designer, setDesigner] = useState("");
+    const [price, setPrice] = useState("");
     const [likes, setLikes] = useState(0)
 
     function handleSubmit(e) {
@@ -20,6 +21,7 @@ function NewForm({addNewJordan}) {
                 image: image,
                 date: date,
                 designer: designer,
+                price: price,
                 likes: likes
             }),
         })
@@ -29,6 +31,7 @@ function NewForm({addNewJordan}) {
             setImage("");
             setDate("");
             setDesigner("");
+            setPrice("");
             
     }
 
@@ -50,6 +53,10 @@ function NewForm({addNewJordan}) {
                 <div class="inline field">
                     <label>Date Released</label>
                     <input type="text" placeholder="Date Released" name="date" value={date} onChange={(e) => setDate(e.target.value)}/>
+                </div>
+                <div class="inline field">
+                    <label>Original Price</label>
+                    <input type="text" placeholder="Price" name="price" value={price} onChange={(e) => setPrice(e.target.value)}/>
                 </div>
                 <div class="inline field">
                     <label>Designer</label>
