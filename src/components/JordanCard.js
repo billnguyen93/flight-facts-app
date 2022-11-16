@@ -1,6 +1,6 @@
 import React from "react";
 
-function JordanCard({jordan, updateJordan, onFavoriteJordan, favorites}) {
+function JordanCard({jordan, updateJordan, onFavoriteJordan, onDeleteJordan}) {
 
     
 
@@ -24,6 +24,13 @@ function JordanCard({jordan, updateJordan, onFavoriteJordan, favorites}) {
         onFavoriteJordan(jordan)
     }
 
+    function handleDeleteClick() {
+        fetch(`http://localhost:3004/jordans/${id}`, {
+            method: "DELETE",
+        });
+        onDeleteJordan(id)
+    }
+
     return (
         <div class="ui black card"> 
             <div class="image">
@@ -43,6 +50,9 @@ function JordanCard({jordan, updateJordan, onFavoriteJordan, favorites}) {
             <a class="ui basic label" onClick={handleFavoriteClick}>
                 Add to Favorites
             </a>
+         </div>
+         <div class="ui button" onClick={handleDeleteClick}>
+             Remove 
          </div>
         </div>
         

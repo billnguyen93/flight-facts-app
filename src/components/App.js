@@ -45,7 +45,15 @@ function App() {
       
     }
 
-    console.log(jordans)
+    function handleRemoveFavorite(id) {
+      const updatedFavorites = favorites.filter((favorite) => favorite.id !== id)
+      setFavorites(updatedFavorites)
+    }
+
+    function handleDeleteJordan(id) {
+      const updatedJordanArray = jordans.filter((jordan) => jordan.id !== id)
+      setJordans(updatedJordanArray)
+    }
 
   return (
     <div className="app" style={{
@@ -56,7 +64,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="/favorites">
-          <Favorites favorites={favorites}/>
+          <Favorites favorites={favorites} onRemoveFavorite={handleRemoveFavorite}/>
         </Route>
         <Route path="/new">
           <NewForm addNewJordan={addNewJordan}/>
@@ -65,7 +73,7 @@ function App() {
           <About />
         </Route>
         <Route path="/">
-          <Home jordans={jordans} updateJordan={updateJordan} onFavoriteJordan={handleFavoriteJordan} favorites={favorites}/>
+          <Home jordans={jordans} updateJordan={updateJordan} onFavoriteJordan={handleFavoriteJordan} favorites={favorites} onDeleteJordan={handleDeleteJordan}/>
         </Route>
       </Switch>
     </div>

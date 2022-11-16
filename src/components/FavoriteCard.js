@@ -1,8 +1,12 @@
 import React from "react";
 
-function FavoriteCard({favorite}) {
+function FavoriteCard({favorite, onRemoveFavorite}) {
 
-    const {name, image, date, designer} = favorite
+    const {id, name, image, date, designer} = favorite
+
+    function handleDeleteClick() {
+        onRemoveFavorite(id)
+    }
     
     return (
         <div>
@@ -17,6 +21,7 @@ function FavoriteCard({favorite}) {
                 <div class="center aligned description">
                     Designed by: {designer}
                 </div>
+                <button onClick={handleDeleteClick}>Remove</button>
             </div>
         </div> 
     )

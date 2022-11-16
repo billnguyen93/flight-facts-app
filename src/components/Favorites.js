@@ -1,12 +1,13 @@
 import React from "react";
 import FavoriteCard from "./FavoriteCard";
 
-function Favorites ({favorites}) {
+function Favorites ({favorites, onRemoveFavorite}) {
 
     const renderFavorites = favorites.map((favorite) => (
         <FavoriteCard 
         key={favorite.id}
         favorite={favorite}
+        onRemoveFavorite={onRemoveFavorite}
         />
     ))
 
