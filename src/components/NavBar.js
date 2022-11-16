@@ -11,9 +11,11 @@ function NavBar() {
                     Home
                 </a>
             </Link>
-            <a class="item">
-                Add New Jordan
-            </a>
+            <Link to="/new">
+                <a class="item">
+                    Add New Jordan
+                </a>
+            </Link>
             <Link to="/favorites">
                 <a class="item">
                     Favorite Jordans

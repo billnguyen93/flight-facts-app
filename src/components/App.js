@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import Home from "./Home";
 import Header from "./Header";
 import Favorites from "./Favorites";
+import NewForm from "./NewForm";
 
 
 function App() {
@@ -38,6 +39,12 @@ function App() {
       }
     }
 
+    function addNewJordan(newJordan) {
+      setJordans((jordans) => [...jordans, newJordan])
+      
+    }
+
+    console.log(jordans)
 
   return (
     <div className="app" style={{
@@ -49,6 +56,9 @@ function App() {
       <Switch>
         <Route path="/favorites">
           <Favorites favorites={favorites}/>
+        </Route>
+        <Route path="/new">
+          <NewForm addNewJordan={addNewJordan}/>
         </Route>
         <Route path="/">
           <Home jordans={jordans} updateJordan={updateJordan} onFavoriteJordan={handleFavoriteJordan}/>

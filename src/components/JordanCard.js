@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 function JordanCard({jordan, updateJordan, onFavoriteJordan}) {
+
+    
 
     const {id, name, image, date, designer, likes} = jordan
 
@@ -19,8 +21,7 @@ function JordanCard({jordan, updateJordan, onFavoriteJordan}) {
     }
 
     function handleFavoriteClick() {
-        onFavoriteJordan(jordan)
-        
+        onFavoriteJordan(jordan)  
     }
     
     return (
