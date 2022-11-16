@@ -4,7 +4,7 @@ function JordanCard({jordan, updateJordan, onFavoriteJordan, onDeleteJordan}) {
 
     
 
-    const {id, name, image, date, designer, likes} = jordan
+    const {id, name, image, date, designer, likes, price} = jordan
 
     function handleLikeClick() {
         const jordanObj = {
@@ -42,6 +42,9 @@ function JordanCard({jordan, updateJordan, onFavoriteJordan, onDeleteJordan}) {
                 <span class="center aligned date">Released in {date}</span>
             <div class="center aligned description">
                 Designed by: {designer}
+            </div>
+            <div class="center aligned description">
+                Original Price: ${price}
             </div>
             <div class="ui labeled button" tabindex="0">
          <div class="ui button" onClick={handleLikeClick}>

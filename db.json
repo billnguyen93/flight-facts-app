@@ -6,6 +6,7 @@
       "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj1Retro1.jpg",
       "date": 1985,
       "designer": "Peter Moore",
+      "price": 65,
       "likes": 30
     },
     {
@@ -14,6 +15,7 @@
       "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj2Retro2.jpg",
       "date": 1987,
       "designer": "Peter Moore",
+      "price": 100,
       "likes": 20
     },
     {
@@ -22,6 +24,7 @@
       "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj3Retro3.jpg",
       "date": 1988,
       "designer": "Tinker Hatfield",
+      "price": 100,
       "likes": 15
     },
     {
@@ -30,6 +33,7 @@
       "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj4Retro4.jpg",
       "date": 1989,
       "designer": "Tinker Hatfield",
+      "price": 110,
       "likes": 12
     },
     {
@@ -38,6 +42,7 @@
       "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj5Retro5.jpg",
       "date": 1990,
       "designer": "Tinker Hatfield",
+      "price": 125,
       "likes": 9
     },
     {
@@ -46,6 +51,7 @@
       "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj6Retro6.jpg",
       "date": 1991,
       "designer": "Tinker Hatfield",
+      "price": 125,
       "likes": 5
     },
     {
@@ -54,6 +60,7 @@
       "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj7Retro7.jpg",
       "date": 1992,
       "designer": "Tinker Hatfield",
+      "price": 125,
       "likes": 3
     },
     {
@@ -62,6 +69,7 @@
       "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj8Retro8.jpg",
       "date": 1993,
       "designer": "Tinker Hatfield",
+      "price": 135,
       "likes": 8
     },
     {
@@ -70,6 +78,7 @@
       "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj9Retro9.jpg",
       "date": 1993,
       "designer": "Tinker Hatfield",
+      "price": 125,
       "likes": 10
     },
     {
@@ -78,6 +87,7 @@
       "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj10Retro10.jpg",
       "date": 1994,
       "designer": "Tinker Hatfield",
+      "price": 125,
       "likes": 8
     },
     {
@@ -86,6 +96,7 @@
       "image": "https://www.footlocker.com/content/dam/flincfoundation/FootLocker/images/flhoj-060217a-aj11Retro11.jpg",
       "date": 1995,
       "designer": "Tinker Hatfield",
+      "price": 125,
       "likes": 12
     }
   ]
