@@ -11,8 +11,14 @@ function Favorites ({favorites}) {
     ))
 
     return (
-            
-        <div className="ui three cards">{renderFavorites}</div>  
+        <div> 
+            <div class="ui inverted segment">
+                <h1 class="ui center aligned header">
+                    My Favorites
+                </h1>
+            </div> 
+            <div className="ui three cards">{renderFavorites}</div>
+        </div>  
         
     )
 }

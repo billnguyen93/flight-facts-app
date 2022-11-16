@@ -30,8 +30,12 @@ function App() {
   }
 
     const handleFavoriteJordan = (jordan) => {
-      const updatedFavorites = [...favorites, jordan]
-      setFavorites(updatedFavorites)
+      if(!favorites.includes(jordan)) {
+        const updatedFavorites = [...favorites, jordan]
+        setFavorites(updatedFavorites)
+      } else {
+        alert("Already Added!")
+      }
     }
 
 
