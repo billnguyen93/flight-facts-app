@@ -5,6 +5,7 @@ import Home from "./Home";
 import Header from "./Header";
 import Favorites from "./Favorites";
 import NewForm from "./NewForm";
+import About from "./About";
 
 
 function App() {
@@ -60,8 +61,11 @@ function App() {
         <Route path="/new">
           <NewForm addNewJordan={addNewJordan}/>
         </Route>
+        <Route path="/about">
+          <About />
+        </Route>
         <Route path="/">
-          <Home jordans={jordans} updateJordan={updateJordan} onFavoriteJordan={handleFavoriteJordan}/>
+          <Home jordans={jordans} updateJordan={updateJordan} onFavoriteJordan={handleFavoriteJordan} favorites={favorites}/>
         </Route>
       </Switch>
     </div>

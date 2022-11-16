@@ -21,11 +21,13 @@ function NavBar() {
                     Favorite Jordans
                 </a>
             </Link>
+            <Link to="/about">
             <a class="item">
                 About
             </a>
-  </div>
-</div>
+            </Link>
+        </div>
+        </div>
     )
 }
 

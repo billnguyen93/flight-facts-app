@@ -1,6 +1,6 @@
 import React from "react";
 
-function JordanCard({jordan, updateJordan, onFavoriteJordan}) {
+function JordanCard({jordan, updateJordan, onFavoriteJordan, favorites}) {
 
     
 
@@ -21,9 +21,9 @@ function JordanCard({jordan, updateJordan, onFavoriteJordan}) {
     }
 
     function handleFavoriteClick() {
-        onFavoriteJordan(jordan)  
+        onFavoriteJordan(jordan)
     }
-    
+
     return (
         <div class="ui black card"> 
             <div class="image">
