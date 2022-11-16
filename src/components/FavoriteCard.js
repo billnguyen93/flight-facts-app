@@ -2,7 +2,7 @@ import React from "react";
 
 function FavoriteCard({favorite, onRemoveFavorite}) {
 
-    const {id, name, image, date, designer} = favorite
+    const {id, name, image, date, designer, price} = favorite
 
     function handleDeleteClick() {
         onRemoveFavorite(id)
@@ -20,6 +20,9 @@ function FavoriteCard({favorite, onRemoveFavorite}) {
                     <span class="center aligned date">Released in {date}</span>
                 <div class="center aligned description">
                     Designed by: {designer}
+                </div>
+                <div class="center aligned description">
+                    Price: ${price}
                 </div>
                 <button onClick={handleDeleteClick}>Remove</button>
             </div>
