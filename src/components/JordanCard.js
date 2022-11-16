@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 function JordanCard({jordan, updateJordan, onFavoriteJordan, onDeleteJordan}) {
 
-    
-
     const {id, name, image, date, designer, likes, price} = jordan
+    const [favoriteClicked, setFavoriteClicked] = useState(false)
 
     function handleLikeClick() {
         const jordanObj = {
@@ -22,6 +21,7 @@ function JordanCard({jordan, updateJordan, onFavoriteJordan, onDeleteJordan}) {
 
     function handleFavoriteClick() {
         onFavoriteJordan(jordan)
+        setFavoriteClicked(true);
     }
 
     function handleDeleteClick() {
@@ -51,7 +51,7 @@ function JordanCard({jordan, updateJordan, onFavoriteJordan, onDeleteJordan}) {
             <i class="heart icon"></i> Likes: {likes}
          </div>
             <a class="ui basic label" onClick={handleFavoriteClick}>
-                Add to Favorites
+                {!favoriteClicked ? "Add to Favorites" : "Added"}
             </a>
          </div>
          <div class="ui button" onClick={handleDeleteClick}>
