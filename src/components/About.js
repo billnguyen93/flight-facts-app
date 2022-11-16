@@ -16,6 +16,7 @@ function About() {
                 <p>Email: billfl93@gmail.com</p>
                 <p>This app was created for a Software Engineering class at Flatiron School using React.</p>
                 <p>It shows facts about some of the most popular Jordan models that you are able to favorite and add any Jordan model you like.</p>
+                <p>You are also able to remove any Jordan from the Main list and Favorites list.</p>
                 <a href="https://github.com/billnguyen93/flight-school-app">GitHub Repo</a>
             </div>
         </div>

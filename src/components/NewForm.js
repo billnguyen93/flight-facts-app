@@ -25,6 +25,10 @@ function NewForm({addNewJordan}) {
         })
             .then(resp => resp.json())
             .then((newJordan) => addNewJordan(newJordan))
+            setName("");
+            setImage("");
+            setDate("");
+            setDesigner("");
             
     }
 
